@@ -177,6 +177,7 @@ main{
 
 .carousel img{
     object-fit: cover;
+    background-position: center;
     min-width: 100%;
     height: 350px;
     border-radius: 15px;
@@ -234,33 +235,35 @@ main{
     text-align: justify;
 }
 
-.card {
-    width: 200px;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.card-text {
-    padding: 10px;
-}
-
-.card-text p {
-    margin: 0;
-    color: black;
-}  
-
 .cardContainer{
-    width: max-content;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cardContainer .row .col{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin-top: 15px;
+    border: 2px solid #6facdb;
+    box-shadow: 2px 2px 3px #6facdb;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.card-body h2{
+    text-transform: uppercase;
+}
+
+.card-body p{
+    text-align: justify;
 }
 
 .form h2{
@@ -400,6 +403,10 @@ form input.boton{
 
     .parrafoConocenos p{
         font-size: 22px;
+    }
+
+    .card{
+        min-width: 320px;
     }
 
     .footer{
