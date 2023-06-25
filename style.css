@@ -197,19 +197,50 @@ main{
     box-shadow: 2px 2px 2px #fff;
 }
 
+.tituloConocenos{
+    margin-top: 20px;
+}
+
+.tituloConocenos h2{
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+}
+
 .containerEditorial{
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #000;
     border-radius: 15px;
     padding: 0;
+    min-height: 350px;
 }
 
-.tituloConocenos h2{
-    font-size: 30px;
-    margin-top: 20px;
+.imagenConocenos{
+    max-height: 200px;
+    border-radius: 15px;
+}
+
+.imagenConocenos img{
+    object-fit: cover;
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+}
+
+.parrafoConocenos{
+    min-height: 150px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafoConocenos p{
     color: #fff;
-    text-align: center;
+    padding: 15px;
+    text-align: justify;
+    word-spacing: 10px;
 }
 
 .editorialArriba{
@@ -220,48 +251,27 @@ main{
     box-shadow: -3px -3px 2px #6facdb;
 }
 
-.imagenConocenos img{
-    object-fit: cover;
-    width: 100%;
-    height: 250px;
-    border-radius: 15px;
-}
-
-.parrafoConocenos{
-    min-height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.parrafoConocenos p{
-    font-size: 15px;
-    padding: 10px;
-    color: #fff;
-    text-align: justify;
-}
-
 .cardContainer{
-    width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
-}
-
-.cardContainer .row .col{
     display: flex;
     justify-content: center;
 }
 
 .card{
-    margin-top: 15px;
+    height: auto;
     border: 2px solid #6facdb;
     box-shadow: 2px 2px 3px #6facdb;
+    margin-bottom: 10px;
 }
 
-.card img {
+.card img{
     object-fit: cover;
-    width: 100%;
-    height: 300px;
+    max-height: 200px;
+}
+
+.card .card-body{
+    min-height: 200px;
 }
 
 .card-body h2{
@@ -344,11 +354,10 @@ label{
     margin: 0 10px;
 }
 
-.redes a img{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    margin: 0 5px;
+.redes i{
+    color: #fff;
+    font-size: 25px;
+    padding: 0px 10px;
 }
 
 @media only screen and (min-width: 768px){
@@ -420,15 +429,32 @@ label{
     }
 
     .tituloConocenos h2{
-        font-size: 45px;
+        font-size: 35px;
     }
 
-    .parrafoConocenos p{
-        font-size: 22px;
+    .imagenConocenos{
+        max-height: 350px;
+        border-radius: 15px;
+    }
+    
+    .imagenConocenos img{
+        object-fit: cover;
+        border-radius: 15px;
+        width: 100%;
+        height: 350px;
     }
 
-    .card{
-        min-width: 320px;
+    .parrafoConocenos{
+        font-size: 20px;
+    }
+    
+    .card img{
+        object-fit: cover;
+        height: 200px;
+    }
+    
+    .card .card-body{
+        height: 680px;
     }
 
     .form button{
