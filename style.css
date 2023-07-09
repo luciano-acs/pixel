@@ -1,473 +1,483 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-
-.centrarBox{
-    width: 90%;
-    margin: 0 auto;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+.centrarBox {
+  width: 90%;
+  margin: 0 auto;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
 }
 
-body.bg-index{
-    background: url('./images/Lawrencium.jpg');
-    background-size: cover;
-}
-body.bg-nosotros{
-    background: url('./images/Frost.jpg');
-    background-size: cover;
-}
-body.bg-galeria{
-    background: url('./images/Deep\ Space.jpg');
-    background-size: cover;
-}
-body.bg-blog{
-    background: url('./images/Under\ the\ Lake.jpg');
-    background-size: cover;
-}
-body.bg-contacto{
-    background: url('./images/Influenza.jpg');
-    background-size: cover;
+body.bg-index {
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
 }
 
-header{
-    padding-top: 5px;
+body.bg-nosotros {
+  background: #000428;
+  background: -webkit-linear-gradient(to bottom, #000428, #004e92);
+  background: linear-gradient(to bottom, #000428, #004e92);
 }
 
-.navbar-brand{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+body.bg-galeria {
+  background: #000000;
+  background: -webkit-linear-gradient(to top, #434343, #000000);
+  background: linear-gradient(to top, #434343, #000000);
 }
 
-.navbar-brand h1{
-    color: #fff;
-    margin-left: 5px;
-    margin-bottom: 0;
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 8px;
-    text-decoration: none;
-    text-shadow: 3px 1px 3px #6facdb;
+body.bg-blog {
+  background: #093028;
+  background: -webkit-linear-gradient(to top, #237A57, #093028);
+  background: linear-gradient(to top, #237A57, #093028);
 }
 
-.navbar-toggler i{
-    color: #6facdb;
-    font-size: 1.4em;
+body.bg-contacto {
+  background: #C04848;
+  background: -webkit-linear-gradient(to bottom, #480048, #C04848);
+  background: linear-gradient(to bottom, #480048, #C04848);
 }
 
-.navbar-toggler:focus{
-    border-color: #6facdb;
-    outline: 0 none;
-    box-shadow: 0 3px 5px #6facdb;
+header {
+  padding-top: 5px;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.navbar-brand h1 {
+  color: #fff;
+  margin-left: 5px;
+  margin-bottom: 0;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  text-decoration: none;
+  text-shadow: 3px 1px 3px #6facdb;
+}
+
+.navbar-toggler i {
+  color: #6facdb;
+  font-size: 1.4em;
+}
+.navbar-toggler:focus {
+  border-color: #6facdb;
+  outline: 0 none;
+  box-shadow: 0 3px 5px #6facdb;
 }
 
 .navbar ul li a {
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar ul li a:hover {
+  color: #6facdb;
 }
 
-.navbar ul li a:hover{
-    color: #6facdb;
-} 
-
-.nav-item .active{
-    color: #6facdb;
+.nav-item .active {
+  color: #6facdb;
 }
 
-main{
-    padding-top: 30px;
+main {
+  padding-top: 30px;
 }
 
-.galeria{
-    width: 100%;
-    height: 760px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 150px);
-    gap: 5px;
+.galeria {
+  margin-top: 5px;
+  width: 100%;
+  height: 760px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 150px);
+  gap: 5px;
+}
+.galeria .item {
+  background-size: cover;
+  background-position: center;
 }
 
-.item{
-    background-size: cover;
-    background-position: center;
-    background-color: #6facdb;
+.item1 {
+  background: url("./images/Imagenes/married.jpg");
+  transition: all 0.45s;
+}
+.item1:hover {
+  border-radius: 10px;
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px #000, -4px -4px 10px #000;
 }
 
-.item1{
-    background-image: url('./images/Imagenes/married.jpg');
-    border-radius: 15px 15px 0 0;    
+.item2 {
+  background: url("./images/Imagenes/beach.jpg");
+  transition: all 0.45s;
+}
+.item2:hover {
+  border-radius: 10px;
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px #000, -4px -4px 10px #000;
 }
 
-.item2{
-    background-image: url('./images/Imagenes/beach.jpg');
+.item3 {
+  background: url("./images/Imagenes/concert.jpg");
+  transition: all 0.45s;
+}
+.item3:hover {
+  border-radius: 10px;
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px #000, -4px -4px 10px #000;
 }
 
-.item3{
-    background-image: url('./images/Imagenes/concert.jpg');
+.item4 {
+  background: url("./images/Imagenes/party.jpg");
+  transition: all 0.45s;
+}
+.item4:hover {
+  border-radius: 10px;
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px #000, -4px -4px 10px #000;
 }
 
-.item4{
-    background-image: url('./images/Imagenes/party.jpg');
+.item5 {
+  background: url("./images/Imagenes/shape.jpg");
+  transition: all 0.45s;
+}
+.item5:hover {
+  border-radius: 10px;
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px #000, -4px -4px 10px #000;
 }
 
-.item5{
-    background-image: url('./images/Imagenes/shape.jpg');
-    border-radius: 0 0 15px 15px;
+.item1 {
+  border-radius: 15px 15px 0 0;
 }
 
-.presentacion{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.item5 {
+  border-radius: 0 0 15px 15px;
 }
 
-.presentacion h2{
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
+.presentacion {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.presentacion h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+.presentacion p {
+  text-align: justify;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
 }
 
-.presentacion p{
-    text-align: justify;
-    padding: 10px 0;
-    font-size: 15px;
-    color: #fff;
+.imagenPresentacion {
+  position: relative;
+}
+.imagenPresentacion h2 {
+  position: absolute;
+  width: 90%;
+  color: #fff;
+  text-shadow: 2px 1px 1px #6facdb;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imagenPresentacion img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.imagenPresentacion{
-    position: relative;
+.container-galeria .box-galeria {
+  width: 100%;
+  height: 350px;
+  margin: 15px 0;
+  height: 400px;
+}
+.container-galeria h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 5px;
+  text-shadow: 2px 1px 1px #6facdb;
 }
 
-.imagenPresentacion h2{
-    position: absolute;
-    width: 90%;
-    color: #fff;
-    text-shadow: 2px 1px 1px #6facdb;
+.carousel img {
+  object-fit: cover;
+  background-position: center;
+  min-width: 100%;
+  height: 350px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-inner {
+  border: 2px solid #6facdb;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #fff;
+}
+
+.tituloConocenos {
+  margin-top: 20px;
+}
+.tituloConocenos h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+}
+
+.containerEditorial {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #000;
+  border-radius: 15px;
+  padding: 0;
+  min-height: 350px;
+}
+
+.imagenConocenos {
+  max-height: 200px;
+  border-radius: 15px;
+}
+.imagenConocenos img {
+  object-fit: cover;
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+}
+
+.parrafoConocenos {
+  min-height: 150px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parrafoConocenos p {
+  color: #fff;
+  padding: 15px;
+  text-align: justify;
+  word-spacing: 10px;
+}
+
+.editorialArriba {
+  box-shadow: 3px 3px 2px #6facdb;
+}
+
+.editorialAbajo {
+  box-shadow: -3px -3px 2px #6facdb;
+}
+
+.cardContainer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  height: auto;
+  border: 2px solid #6facdb;
+  box-shadow: 2px 2px 3px #6facdb;
+  margin-bottom: 10px;
+}
+.card img {
+  object-fit: cover;
+  max-height: 200px;
+}
+.card .card-body {
+  min-height: 200px;
+}
+.card .card-body h2 {
+  text-transform: uppercase;
+}
+.card .card-body p {
+  text-align: justify;
+}
+
+.tituloForm h2 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.form button {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px #fff;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 250px;
+}
+.form button:hover {
+  color: #6facdb;
+  box-shadow: 1px 2px 2px #6facdb;
+  font-weight: bold;
+}
+.form input {
+  min-width: 300px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  color: black;
+}
+.form input:focus {
+  border-color: #6facdb;
+  outline: 0 none;
+  box-shadow: 0 2px 3px #6facdb;
+}
+
+label {
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  padding: 10px 0;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .redes {
+  margin-top: 5px;
+}
+
+.derechos h3 {
+  color: #fff;
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+.redes i {
+  color: #fff;
+  font-size: 25px;
+  padding: 0px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-brand h1 {
+    font-size: 50px;
+  }
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 225px);
+    height: 450px;
+  }
+  .item1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 15px 0 0 0;
+  }
+  .item2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .item3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-radius: 0 15px 0 0;
+  }
+  .item4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-radius: 0 0 0 15px;
+  }
+  .item5 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border-radius: 0 0 15px 0;
+  }
+  .presentacion h2 {
     font-size: 35px;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 10px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.imagenPresentacion img{
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.container-galeria .box-galeria{
-    width: 100%;
-    height: 350px;
-    margin: 15px 0;  
-    height: 400px;
-}
-
-.container-galeria h2{
-    color: #fff;
-    font-weight: bold;
-    font-size: 30px;
-    letter-spacing: 5px;
-    text-shadow: 2px 1px 1px #6facdb;
-}
-
-.carousel img{
-    object-fit: cover;
-    background-position: center;
-    min-width: 100%;
-    height: 350px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-}
-
-.carousel-inner{    
-    border: 2px solid #6facdb;
-    border-radius: 15px;
-    box-shadow: 2px 2px 2px #fff;
-}
-
-.tituloConocenos{
-    margin-top: 20px;
-}
-
-.tituloConocenos h2{
-    color: #fff;
-    text-align: center;
+  }
+  .presentacion p {
     font-size: 24px;
-}
-
-.containerEditorial{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #000;
-    border-radius: 15px;
-    padding: 0;
-    min-height: 350px;
-}
-
-.imagenConocenos{
-    max-height: 200px;
-    border-radius: 15px;
-}
-
-.imagenConocenos img{
-    object-fit: cover;
-    border-radius: 15px;
-    width: 100%;
-    height: 200px;
-}
-
-.parrafoConocenos{
-    min-height: 150px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.parrafoConocenos p{
-    color: #fff;
-    padding: 15px;
-    text-align: justify;
-    word-spacing: 10px;
-}
-
-.editorialArriba{
-    box-shadow: 3px 3px 2px #6facdb;
-}
-
-.editorialAbajo{
-    box-shadow: -3px -3px 2px #6facdb;
-}
-
-.cardContainer{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.card{
-    height: auto;
-    border: 2px solid #6facdb;
-    box-shadow: 2px 2px 3px #6facdb;
-    margin-bottom: 10px;
-}
-
-.card img{
-    object-fit: cover;
-    max-height: 200px;
-}
-
-.card .card-body{
-    min-height: 200px;
-}
-
-.card-body h2{
-    text-transform: uppercase;
-}
-
-.card-body p{
-    text-align: justify;
-}
-
-.tituloForm h2{
-    margin-top: 35px;
-    margin-bottom: 15px;
+  }
+  .imagenPresentacion h2 {
+    font-size: 45px;
     text-align: center;
-    color: #fff;
-    font-weight: bold;
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  }
+  .container-galeria {
     margin-top: 15px;
-}
-
-.form button{
-    background-color: #000;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 10px;
-    box-shadow: 1px 2px 2px #fff;
-    height: 35px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    width: 250px;
-}
-
-.form button:hover{
-    color: #6facdb;
-    box-shadow: 1px 2px 2px #6facdb;
-    font-weight: bold;
-}
-
-.form input{
-    min-width: 300px;
-    height: 30px;
-    padding: 10px;
-    border-radius: 12px;
-    border: 1px solid #333;
-    color: black;
-}
-
-.form input:focus{
-    border-color: #6facdb;
-    outline: 0 none;
-    box-shadow: 0 2px 3px #6facdb;
-}
-
-label{
-    color: #fff;
-}
-
-.footer{
-    width: 100%;
-    padding: 10px 0;
-    height: 80px;
+  }
+  .container-galeria h2 {
+    font-size: 35px;
+    margin: 0;
+  }
+  .box-galeria .tituloGaleria {
+    max-width: 40%;
+    padding: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .box-galeria .carousel {
+    min-width: 60%;
+    height: 350px;
+  }
+  .tituloConocenos h2 {
+    font-size: 45px;
+  }
+  .imagenConocenos {
+    max-height: 350px;
+    border-radius: 15px;
+  }
+  .imagenConocenos img {
+    object-fit: cover;
+    border-radius: 15px;
+    width: 100%;
+    height: 350px;
+  }
+  .parrafoConocenos {
+    font-size: 24px;
+  }
+  .card img {
+    object-fit: cover;
+    height: 200px;
+  }
+  .card .card-body {
+    height: 680px;
+  }
+  .form button {
+    width: 350px;
+  }
+  .form input {
+    min-width: 400px;
+  }
+  .footer {
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-.footer .redes{
-    margin-top: 5px;
-}
-
-.derechos h3{
-    color: #fff;
-    font-size: 15px;
-    margin: 0 10px;
-}
-
-.redes i{
-    color: #fff;
-    font-size: 25px;
-    padding: 0px 10px;
-}
-
-@media only screen and (min-width: 768px){
-    .navbar-brand h1{
-        font-size: 45px;
-    }
-    .galeria{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 225px);
-        height: 450px;
-    }
-    .item1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        border-radius: 15px 0 0 0;
-    }
-    .item2{
-        grid-column: 2/3;
-        grid-row: 1/3;
-    }
-    .item3{
-        grid-column: 3/4;
-        grid-row: 1/2;
-        border-radius: 0 15px 0 0;
-    }
-    .item4{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        border-radius: 0 0 0 15px;
-    }
-    .item5{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        border-radius: 0 0 15px 0;
-    }
-    .presentacion h2{
-        font-size: 50px;
-    }
-    
-    .presentacion p{
-        font-size: 20px;
-    }
-
-    .imagenPresentacion h2{
-        font-size: 55px;
-        text-align: center;
-    }
-
-    .container-galeria{
-        margin-top: 15px;
-    }
-
-    .container-galeria h2{
-        font-size: 48px;        
-        margin: 0;
-    }
-
-    .box-galeria .tituloGaleria{
-        max-width: 40%;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .box-galeria .carousel{
-        min-width: 60%;
-        height: 350px;
-    }
-
-    .tituloConocenos h2{
-        font-size: 35px;
-    }
-
-    .imagenConocenos{
-        max-height: 350px;
-        border-radius: 15px;
-    }
-    
-    .imagenConocenos img{
-        object-fit: cover;
-        border-radius: 15px;
-        width: 100%;
-        height: 350px;
-    }
-
-    .parrafoConocenos{
-        font-size: 20px;
-    }
-    
-    .card img{
-        object-fit: cover;
-        height: 200px;
-    }
-    
-    .card .card-body{
-        height: 680px;
-    }
-
-    .form button{
-        width: 350px;
-    }
-
-    .form input{
-        min-width: 400px;
-    }
-
-    .footer{
-        margin-top: 0;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
+/*# sourceMappingURL=style.css.map */

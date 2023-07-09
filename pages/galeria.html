@@ -1,168 +1,373 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../images/logo1.png" type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../style.css" />
-    <title>Galeria</title>
-</head>
-
-<body class="bg-galeria">
-    <header class="centrarBox">
-        <nav class="navbar navbar-expand-md">
-            <div class="container">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../images/logo1.png" alt="" width="60" height="60" />
-                    <h1>PIXEL</h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-sm-2">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Galería</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Explora nuestra galería y déjate cautivar por nuestras impresionantes fotografías de bodas, espectáculos, conciertos y más. Revive momentos inolvidables a través de nuestras imágenes vibrantes y llenas de emoción."
+        />
+        <meta
+            name="keywords"
+            content="galeria fotografica fotos boda shows eventos"
+        />
+        <link
+            rel="shortcut icon"
+            href="../images/logo1.png"
+            type="image/x-icon"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../style.css" />
+        <title>Galeria</title>
+    </head>
+    <body class="bg-galeria">
+        <header class="centrarBox">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">
+                        <img
+                            src="../images/logo1.png"
+                            alt=""
+                            width="60"
+                            height="60"
+                        />
+                        <h1>PIXEL</h1>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-sm-2">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="../index.html"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html"
+                                    >Nosotros</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html"
+                                    >Contacto</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+        </header>
+        <main>
+            <div class="imagenPresentacion">
+                <img
+                    src="../images/Fotografos/negro1.jpg"
+                    alt="fotografo pixel"
+                />
+                <h2
+                    class="tituloImagenGaleria animate__animated animate__fadeIn"
+                >
+                    NUESTROS TRABAJOS
+                </h2>
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="imagenPresentacion">
-            <img src="../images/Fotografos/negro1.jpg" alt="" />
-            <h2 class="tituloImagenGaleria">NUESTROS TRABAJOS</h2>
-        </div>
-        <div class="container container-galeria centrarBox">
-            <div class="row box-galeria">
-                <div class="tituloGaleria col-md-6 align-self-md-center col-sm-12">
-                    <h2>BODAS</h2>
-                </div>
-                <div class="carousel col-md-6 col-sm-12 align-self-md-center">
-                    <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Imagenes/married.jpg" class="d-block w-100" />
+            <div class="container container-galeria centrarBox">
+                <div class="row box-galeria">
+                    <div
+                        class="tituloGaleria col-md-6 align-self-md-center col-sm-12"
+                    >
+                        <h2
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="100"
+                            data-aos-offset="0"
+                        >
+                            BODAS
+                        </h2>
+                    </div>
+                    <div
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        class="carousel col-md-6 col-sm-12 align-self-md-center"
+                    >
+                        <div
+                            id="carouselExampleIndicators1"
+                            class="carousel slide"
+                            data-bs-ride="carousel"
+                            data-bs-interval="7000"
+                        >
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="../images/Imagenes/married.jpg"
+                                        class="d-block w-100"
+                                        alt="recien casados campo"
+                                    />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="../images/Imagenes/married2.jpg"
+                                        class="d-block w-100"
+                                        alt="recien casados yate"
+                                    />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="../images/Imagenes/married3.jpg"
+                                        class="d-block w-100"
+                                        alt="recien casados"
+                                    />
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="../images/Imagenes/married2.jpg" class="d-block w-100" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Imagenes/married3.jpg" class="d-block w-100" />
-                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators1"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators1"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    </div>
+                </div>
+                <div class="row box-galeria">
+                    <div
+                        class="tituloGaleria col-md-6 align-self-md-center col-sm-12"
+                    >
+                        <h2
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="100"
+                            data-aos-offset="0"
+                        >
+                            RECITALES
+                        </h2>
+                    </div>
+                    <div
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        class="carousel col-md-6 col-sm-12 align-self-md-center"
+                    >
+                        <div
+                            id="carouselExampleIndicators2"
+                            class="carousel slide"
+                            data-bs-ride="carousel"
+                            data-bs-interval="7200"
+                        >
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="../images/Imagenes/concert.jpg"
+                                        class="d-block w-100"
+                                        alt="publico show"
+                                    />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="../images/Imagenes/concert2.jpg"
+                                        class="d-block w-100"
+                                        alt="escenario show"
+                                    />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="../images/Imagenes/concert3.jpg"
+                                        class="d-block w-100"
+                                        alt="publico show"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators2"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators2"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row box-galeria">
+                    <div
+                        class="tituloGaleria col-md-6 align-self-md-center col-sm-12"
+                    >
+                        <h2
+                            data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="100"
+                            data-aos-offset="0"
+                        >
+                            FIESTAS
+                        </h2>
+                    </div>
+                    <div
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        class="carousel col-md-6 col-sm-12 align-self-md-center"
+                    >
+                        <div
+                            id="carouselExampleIndicators3"
+                            class="carousel slide"
+                            data-bs-ride="carousel"
+                            data-bs-interval="7400"
+                        >
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img
+                                        src="../images/Imagenes/party.jpg"
+                                        class=""
+                                        alt="fiesta en pintura"
+                                    />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="../images/Imagenes/party2.jpg"
+                                        class=""
+                                        alt="fiesta con invitados"
+                                    />
+                                </div>
+                                <div class="carousel-item active">
+                                    <img
+                                        src="../images/Imagenes/party3.jpg"
+                                        class=""
+                                        alt="fiesta show"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators3"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators3"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row box-galeria">
-                <div class="tituloGaleria col-md-6 align-self-md-center col-sm-12">
-                    <h2>RECITALES</h2>
+        </main>
+        <footer class="centrarBox">
+            <div class="footer">
+                <div class="derechos">
+                    <h3>© 2023 Todos los derechos reservados</h3>
                 </div>
-                <div class="carousel col-md-6 col-sm-12 align-self-md-center">
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7200">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Imagenes/concert.jpg" class="d-block w-100" alt="..." />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Imagenes/concert2.jpg" class="d-block w-100" alt="..." />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Imagenes/concert3.jpg" class="d-block w-100" alt="..." />
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                <div class="redes">
+                    <a href="https://facebook.com"
+                        ><i class="fa-brands fa-square-facebook"></i
+                    ></a>
+                    <a href="https://twitter.com"
+                        ><i class="fa-brands fa-square-twitter"></i
+                    ></a>
+                    <a href="https://instagram.com"
+                        ><i class="fa-brands fa-square-instagram"></i
+                    ></a>
                 </div>
             </div>
-            <div class="row box-galeria">
-                <div class="tituloGaleria col-md-6 align-self-md-center col-sm-12">
-                    <h2>FIESTAS</h2>
-                </div>
-                <div class="carousel col-md-6 col-sm-12 align-self-md-center">
-                    <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7400">
-                        <div class="carousel-inner">
-                            <div class="carousel-item">
-                                <img src="../images/Imagenes/party.jpg" class="" alt="..." />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Imagenes/party2.jpg" class="" alt="..." />
-                            </div>
-                            <div class="carousel-item active">
-                                <img src="../images/Imagenes/party3.jpg" class="" alt="..." />
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="centrarBox">
-        <div class="footer">
-            <div class="derechos">
-                <h3>© 2023 Todos los derechos reservados</h3>
-            </div>
-            <div class="redes">
-                <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
-                <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
-
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>
