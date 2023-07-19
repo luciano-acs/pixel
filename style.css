@@ -461,11 +461,7 @@ label {
     font-size: 24px;
   }
   .card img {
-    object-fit: cover;
     height: 200px;
-  }
-  .card .card-body {
-    height: 680px;
   }
   .form button {
     width: 350px;
@@ -477,6 +473,21 @@ label {
     margin-top: 0;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card .card-body {
+    height: 550px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1190px) {
+  .card .card-body {
+    height: 675px;
+  }
+}
+@media only screen and (min-width: 1191px) {
+  .card .card-body {
+    height: 530px;
   }
 }
 
