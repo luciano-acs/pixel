@@ -104,7 +104,7 @@ main {
 }
 
 .item1 {
-  background: url("./images/Imagenes/married.jpg");
+  background: url("./images/Imagenes/married.webp");
   transition: all 0.45s;
 }
 .item1:hover {
@@ -114,7 +114,7 @@ main {
 }
 
 .item2 {
-  background: url("./images/Imagenes/beach.jpg");
+  background: url("./images/Imagenes/beach.webp");
   transition: all 0.45s;
 }
 .item2:hover {
@@ -124,7 +124,7 @@ main {
 }
 
 .item3 {
-  background: url("./images/Imagenes/concert.jpg");
+  background: url("./images/Imagenes/concert.webp");
   transition: all 0.45s;
 }
 .item3:hover {
@@ -134,7 +134,7 @@ main {
 }
 
 .item4 {
-  background: url("./images/Imagenes/party.jpg");
+  background: url("./images/Imagenes/party.webp");
   transition: all 0.45s;
 }
 .item4:hover {
@@ -144,7 +144,7 @@ main {
 }
 
 .item5 {
-  background: url("./images/Imagenes/shape.jpg");
+  background: url("./images/Imagenes/shape.webp");
   transition: all 0.45s;
 }
 .item5:hover {
